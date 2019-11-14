@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>Voice Demo</title>
+		
+		<meta name="author" content="Igor Peonte <igor.144@gmail.com">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- JQuery & Plugins -->
+		<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+				
+		<!-- Custom modules -->
+		<script type="text/javascript" src="js/main.js"></script>
+		
+		<style>
+			html, body {
+				height: 100%;
+			}
+			
+			table.numbers {
+				width: 100%;
+				border-spacing: 10px;
+			}
+			
+			td.number {
+				background-color: #e3f0d5;
+			}
+			
+			#sn_text, td.number {
+				text-align: center;
+				font-size: 4.5em;
+				font-weight: bold;
+			}
+			
+			button {
+				font-size: 5em;
+				font-weight: bold;
+			}
+			
+			button {
+				margin: 5px;
+				padding: 5px;
+			}
+			
+		</style>
+	</head>
+
+	<body>
+		<div><button id="main" onclick="main()">Run</button><span id="sn_text"></span></div>
+		
+		<table class="numbers">
+			<tr>
+				<td class="number" onclick="add_number(this)">A</td>
+				<td class="number" onclick="add_number(this)">B</td>
+				<td class="number" onclick="add_number(this)">C</td>
+				<td class="number" onclick="add_number(this)">D</td>
+				<td class="number" onclick="add_number(this)">E</td>
+				<td class="number" onclick="add_number(this)">F</td>
+			</tr>
+			<tr>
+				<td class="number" onclick="add_number(this)">G</td>
+				<td class="number" onclick="add_number(this)">H</td>
+				<td class="number" onclick="add_number(this)">I</td>
+				<td class="number" onclick="add_number(this)">J</td>
+				<td class="number" onclick="add_number(this)">K</td>
+				<td class="number" onclick="add_number(this)">L</td>
+			</tr>
+			<tr>
+				<td class="number" onclick="add_number(this)">M</td>
+				<td class="number" onclick="add_number(this)">N</td>
+				<td class="number" onclick="add_number(this)">O</td>
+				<td class="number" onclick="add_number(this)">P</td>
+				<td class="number" onclick="add_number(this)">Q</td>
+				<td class="number" onclick="add_number(this)">R</td>
+			</tr>
+			<tr>
+				<td class="number" onclick="add_number(this)">S</td>
+				<td class="number" onclick="add_number(this)">T</td>
+				<td class="number" onclick="add_number(this)">U</td>
+				<td class="number" onclick="add_number(this)">V</td>
+				<td class="number" onclick="add_number(this)">W</td>
+				<td class="number" onclick="add_number(this)">X</td>
+			</tr>
+			<tr>
+				<td class="number" onclick="add_number(this)">Y</td>
+				<td class="number" onclick="add_number(this)">Z</td>
+				<td class="number" onclick="add_number(this)">1</td>
+				<td class="number" onclick="add_number(this)">2</td>
+				<td class="number" onclick="add_number(this)">3</td>
+				<td class="number" onclick="add_number(this)">4</td>
+			</tr>
+			<tr>
+				<td class="number" onclick="add_number(this)">5</td>
+				<td class="number" onclick="add_number(this)">6</td>
+				<td class="number" onclick="add_number(this)">7</td>
+				<td class="number" onclick="add_number(this)">8</td>
+				<td class="number" onclick="add_number(this)">9</td>
+				<td class="number" onclick="add_number(this)">0</td>
+			</tr>
+		</table>
+		<div id="speech"></div>
+	</body>
+</html>
